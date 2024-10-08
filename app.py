@@ -14,10 +14,8 @@ if 'pdf_list' not in st.session_state:
 # Title of the app
 st.title("RAG Chatbot with PDF Upload")
 # Hugging Face login using environment variable or Streamlit secrets
-hf_token = "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"
-if not hf_token:
-    hf_token = st.secrets["general"]["HUGGINGFACE_TOKEN"]  # Optional: Streamlit secrets
-if hf_token:
+if st.secrets:
+    hf_token = st.secrets["HUGGINGFACE_TOKEN"]
     login(token=hf_token)
     st.success("Logged into Hugging Face successfully!")
 else:
