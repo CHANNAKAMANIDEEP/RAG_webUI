@@ -1,4 +1,4 @@
-# RAG Chatbot with PDF Upload
+# AI Doc Agent(ADA)
 
 This repository implements a **Retrieval-Augmented Generation (RAG) Chatbot** web application using [Streamlit](https://streamlit.io/), [llama-index](https://github.com/run-llama/llama_index), and Hugging Face LLMs. The app allows users to upload PDFs and interact with a chatbot that answers queries based on the content of the uploaded PDF using advanced language models and vector-based retrieval.
 
